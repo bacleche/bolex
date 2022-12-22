@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Tertiaire</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">accueil</a></li>
+                <li>Tertiaire</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Projects Single Section -->
+	<section class="projects-single-section">
+		<div class="auto-container">
+			<!-- Project Info Boxed -->
+			<div class="project-info-block">
+				<div class="block-info">
+					<div class="row clearfix">
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							<div class="project-info">
+								<span class="icon fa fa-user"></span>
+								<strong>Client :</strong>   TransGas
+							</div>
+						</div>
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							<div class="project-info">
+								<span class="icon fa fa-globe"></span>
+								<strong>Investors Website :</strong>   www.clickhere.com
+							</div>
+						</div>
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							<div class="project-info">
+								<span class="icon fa fa-map-marker"></span>
+								<strong>Location :</strong>   Slovenija, Ljubljana
+							</div>
+						</div>
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							<div class="project-info">
+								<span class="icon fa fa-calendar"></span>
+								<strong>Construction Date :</strong>   October 2015
+							</div>
+						</div>
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							<div class="project-info">
+								<span class="icon fa fa-dollar"></span>
+								<strong>Value :</strong>   $1.299.525,00
+							</div>
+						</div>
+						<!-- Column -->
+						<div class="column col-lg-4 col-md-6 col-sm-12">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<h2>TransGas Prud’homme ‘A’ Plant Repairs</h2>
+			<div class="bold-text">Repair of the ‘A’ Plant Facilities at TransGas Prud’homme Gas Storage Caverns following a fire incident. </div>
+			
+			<!-- Carousel Box -->
+			<div class="carousel-box">
+				<div class="project-single-carousel owl-carousel owl-theme">
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/7.jpg" %}" alt="" />
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/7.jpg" %}" alt="" />
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/7.jpg" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<h3>Our client’s challenge</h3>
+			<p>In October 2015, the TransGas Prud’homme Gas Storage Caverns in Saskatchewan were left ablaze after a significant explosion which occurred at the principal wellhead. Gas production from this facility is crucial during the winter when natural gas demands are the highest. It was therefore critical that the facility was repaired in time before the cold set in. </p>
+			<div class="row clearfix">
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<h3>Our approach</h3>
+					<p>In order to meet the required schedule, TransGas delegated procurement and construction management services to WSP. WSP’s procurement procedures allowed for the selection of contractors and material suppliers in an efficient manner while still ensuring traceability for insurance auditors. The tight schedule for the emergency repairs required a collaborative effort between the Saskatchewan Industrial group (Project Management, Mechanical Engineering and Structural Engineering) and the Calgary Oil & Gas group (Electrical Engineering the Calgary Oil & Gas group (Electrical Engineering the Calgary Oil & Gas group (Electrical Engineering and Procurement Services).</p>
+				</div>
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					
+					<!--Video Box-->
+					<div class="video-box">
+						<div class="image">
+							<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button"><i class="ripple"></i></span></a>
+							<img src="{% static "images/resource/video-img.jpg" %}" alt="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- Two Column -->
+			<div class="two-column">
+				<div class="row clearfix">
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+						<h3>Outcome</h3>
+						<p>The $4 million project was successfully completed in two separate phases with both phases  coming in on schedule and the overall costs coming in under budget. Emergency repairs to the facility were completed on December 11th, 2014 which allowed for the facility to operate through the critical winter months. Permanent electrical repairs along with less critical site deficiencies were completed in April and May of 2016 when a longer facility shut-down could be tolerated.</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Projects Page Section -->
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">News Letter</div>
+							<h2>Join Our Community</h2>
+						</div>
+					</div>
+					<div class="text">Getting quality Industrial Care with Induzy is easier than ever. <br> Let us treat your loved ones like family!</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Email Address" required>
+								<button type="submit" class="theme-btn btn-style-four">Submit Now</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/newsletter.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

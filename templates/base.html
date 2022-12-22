@@ -1,0 +1,375 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bolex Group</title>
+
+        <link rel="shortcut icon" href="images/favicon.png" %}" type="image/x-icon">
+        <link rel="icon" href="{% static "images/favicon.png" %}" type="image/x-icon">
+
+        <!-- Responsive -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!-- Stylesheets -->
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+        <link href="{% static "css/style.css" %}" rel="stylesheet">
+        <link href="{% static "css/slick.css" %}" rel="stylesheet">
+        <link href="{% static "css/responsive.css" %}" rel="stylesheet">
+        <!--Color Switcher Mockup-->
+        <link href="{% static "css/color-switcher-design.css" %}" rel="stylesheet">
+        <!--Color Themes-->
+        <link id="theme-color-file" href="{% static "css/color-themes/default-theme.css" %}" rel="stylesheet">
+
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="{% static "js/respond.js" %}"></script><![endif]-->
+    </head>
+    <body>
+
+        <div class="page-wrapper">
+
+            <!-- Preloader -->
+            <div class="preloader"></div>
+
+            <!-- Main Header / Header Style Two-->
+            <header class="main-header header-style-two">
+
+                <!--Header Top-->
+                <div class="header-top-two">
+                    <div class="auto-container">
+                        <div class="clearfix">
+                            <!--Top Left-->
+                            <div class="top-left">
+                                <!--Social Box-->
+                                <ul class="social-box">
+                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                </ul>
+                            </div>
+                            <!--Top Right-->
+                            <div class="top-right">
+                                <div class="timing">Ouvert De : Lundi - Samedi 9 am à  5 pm</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Header-Upper-->
+                <div class="header-upper">
+                    <div class="auto-container">
+                        <div class="clearfix">
+
+                            <div class="pull-left logo-box">
+                                <div class="logo"><a href="{% url "home" %}"><img src="{% static "images/logo6.png" %}" width="150" height="120" alt="Bolex-Group" title="Bolex Group"></a></div>
+                            </div>
+
+                            <div class="pull-right upper-right">
+                                <div class="info-outer clearfix">
+
+                                    <!--Info Box-->
+                                    <div class="upper-column info-box">
+                                        <div class="icon-box"><span class="flaticon-clock-1"></span></div>
+                                        <ul>
+                                            <li><span>Heures de Travail:</span> <br> Lundi à  Vendredi 9:00am - 6:00pm</li>
+                                        </ul>
+                                    </div>
+
+                                    <!--Info Box-->
+                                    <div class="upper-column info-box">
+                                        <div class="icon-box"><span class="flaticon-contact-1"></span></div>
+                                        <ul>
+                                            <li><span>Applez-Nous:</span> <br> (+242) 05 386 39 09 / 06 401 47 43</li>
+                                        </ul>
+                                    </div>
+
+                                    <!--Info Box-->
+                                    <div class="upper-column info-box">
+                                        <div class="icon-box"><span class="flaticon-email-1"></span></div>
+                                        <ul>
+                                            <li><span>Email:</span> <br> info@bolex-group.com</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Header Upper-->
+
+                <!--Header Lower-->
+                <div class="header-lower">
+
+                    <div class="auto-container clearfix">
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="{% url "home" %}">Accueil</a></li>
+                                        <li class="dropdown"><a href="#">Nos Services</a>
+                                            <ul>
+                                                <li><a href="{% url "services" %}">Services</a></li>
+                                                <li><a href="{% url "expertises/installationelectrique" %}">Installation Electricité & Eclairage</a></li>
+                                                <li><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenance Climatisation</a></li>
+                                                <li><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></li>
+                                                <li><a href="{% url "expertises/gestionbatiment" %}">Gestion des Batiments et Maintenance</a></li>
+                                                <li><a href="{% url "nous-decouvrir/securite" %}">Securité</a></li>
+                                                <li><a href="{% url "nous-decouvrir/nettoyagelocaux" %}">Nettoyage Des Locaux</a></li>
+                                                <li><a href="{% url "expertises/groupeelectrogene" %}">Maintenance Groupes Electrogènes</a></li>
+                                                <li><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></li>
+
+                                            </ul>
+                                        </li>
+                                      
+                                        <li class="dropdown"><a href="#">Nous découvrir</a>
+                                           <ul>
+                                                <li><a href="{% url "nous-decouvrir/flexibilite" %}">Flexibilité</a></li>
+                                                <li><a href="{% url "nous-decouvrir/expertise" %}">Notre Expertise</a></li>
+                                            </ul> 
+                                        </li>
+                                        <li><a href="{% url "plus-value" %}">Notre Plus Value</a></li>
+                                        <li class=""><a href="{% url "about" %}">A propos de Nous</a>
+                                        <li><a href="{% url "contact" %}">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <!-- Main Menu End-->
+                            <div class="outer-box clearfix">
+
+                                <!--Option Box-->
+                                <div class="option-box">
+                                    <!--Search Box-->
+                                    <div class="search-box-outer">
+                                        <div class="dropdown">
+                                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                                <li class="panel-outer">
+                                                    <div class="form-container">
+                                                        <form method="post" action="http://ary-themes.com/html/buliten/blog.html">
+                                                            <div class="form-group">
+                                                                <input type="search" name="field-name" value="" placeholder="Recherche Metier" required>
+                                                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-box">
+                                        <a href="{% url "contact" %}" class="theme-btn btn-style-five">Obtenir devis</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="side-curve"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Header Lower-->
+
+                <!--Sticky Header-->
+                <div class="sticky-header">
+                    <div class="auto-container clearfix">
+                        <!--Logo-->
+                        <div class="logo pull-left">
+                            <a href="{% url "home" %}" class="img-responsive"><img src="{% static "images/logo6.png" %}" width="120" height="120" alt="" title=""></a>
+                        </div>
+
+                        <!--Right Col-->
+                        <div class="right-col pull-right">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="{% url "home" %}">Accueil</a></li>
+                                        <li class="dropdown"><a href="#">Nos Services</a>
+                                            <ul>
+                                                <li><a href="{% url "services" %}">Services</a></li>
+                                                <li><a href="{% url "expertises/installationelectrique" %}">Installation Electricité & Eclairage</a></li>
+                                                <li><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenance Climatisation</a></li>
+                                                <li><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></li>
+                                                <li><a href="{% url "expertises/gestionbatiment" %}">Gestion des Batiments et Maintenance</a></li>
+                                                <li><a href="{% url "nous-decouvrir/securite" %}">Securité</a></li>
+                                                <li><a href="{% url "nous-decouvrir/nettoyagelocaux" %}">Nettoyage Des Locaux</a></li>
+                                                <li><a href="{% url "expertises/groupeelectrogene" %}">Maintenance Groupes Electrogènes</a></li>
+                                                <li><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="#">Nous découvrir</a>
+                                            <ul>
+                                                 <li><a href="{% url "nous-decouvrir/flexibilite" %}">Flexibilité</a></li>
+                                                 <li><a href="{% url "nous-decouvrir/expertise" %}">Notre Expertise</a></li>
+                                             </ul> 
+                                         <!-- </li> -->
+                                         <li><a href="{% url "plus-value" %}">Notre Plus Value</a></li>
+                                         <li class=""><a href="{% url "about" %}">A propos de Nous</a>
+                                         <li><a href="{% url "contact" %}">Contact</a></li> 
+                                    </ul>
+                                </div>
+                            </nav><!-- Main Menu End-->
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Sticky Header-->
+
+            </header>
+            <!--End Main Header -->
+
+            {% block content %}{% endblock content %}
+
+            <!-- Footer Style Two -->
+            <footer class="footer-style-two" style="background-color:#000048;">
+
+                <div class="auto-container">
+
+                    <!--Widgets Section-->
+                    <div class="widgets-section" style="background-image:url(images/background/pattern-3.png)">
+                        <div class="row clearfix">
+
+                            <!--big column-->
+                            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="footer-widget logo-widget">
+                                            <div class="logo">
+                                                <a href="index-2.html"><img src="{% static "images/logo6.png" %}" width="120" height="100" style="background-color: white; border-radius: 170px;" alt="" /></a>
+                                            </div>
+                                            <div class="text">
+                                                <p>Notre vocation est de créer de l’emploi durable.</p>
+                                                <p> BOLEX GROUP Emploi a développé une expertise auprès des entreprises dans la mise à disposition de personnel, dans l’accompagnement et le conseil RH.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    
+
+                                </div>
+                            </div>
+
+                            <!--big column-->
+                            <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="footer-widget services-widget">
+                                            <h5>Services</h5>
+                                            <ul class="service-list">
+                                                <li><a href="{% url "expertises/installationelectrique" %}">Installation Electricité & Eclairage</a></li>
+                                                <li><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenance Climatisation</a></li>
+                                                <li><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></li>
+                                                <li><a href="{% url "expertises/gestionbatiment" %}">Gestion des Batiments et Maintenance</a></li>
+                                                <li><a href="{% url "nous-decouvrir/securite" %}">Securité</a></li>
+                                                <li><a href="{% url "nous-decouvrir/nettoyagelocaux" %}">Nettoyage Des Locaux</a></li>
+                                                <li><a href="{% url "expertises/groupeelectrogene" %}">Maintenance Groupes Electrogènes</a></li>
+                                                <li><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></li>
+                                            </a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="footer-widget info-widget">
+                                            <h5>Comment Nous Contacter ?</h5>
+                                            <ul class="list-style-one alternate">
+                                                <li><span class="icon flaticon-map-1"></span>Immeuble Yoka-Bernard(2e étage) Brazzaville (Rep. Congo)</li>
+                                                <li><span class="icon flaticon-mail"></span>Bureau :(+242) 05 386 39 09 / 06 401 47 43 </li>
+                                                <li><span class="icon flaticon-stopwatch"></span>Nos Horaires: Mon-Fri (9 am - 8 pm)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom" style="background-color:#7ad3fb; color:#ffffff !important;">
+                    <div class="auto-container">
+                        <div class="row clearfix">
+
+                            <!-- Copyright Column -->
+                            <div class="copyright-column col-lg-6 col-md-12 col-sm-12">
+                                <div class="copyright">Copyright &copy; Tous les droits sont réservés | <a href="expert-iconnect.cg" style="color:white;">Iconnect</a></div>
+                            </div>
+
+                            <!-- Social Column -->
+                            <div class="social-column col-lg-6 col-md-12 col-sm-12">
+                                <ul class="footer-nav">
+                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-skype"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <!-- End Footer Style Two -->
+
+        </div>
+	    <!--End pagewrapper-->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top scroll-to-target" style="background-color:#000048;" data-target="html"><span class="fa fa-arrow-up"></span></div>
+
+        <script src="{% static "js/jquery.js" %}"></script>
+        <script src="{% static "js/popper.min.js" %}"></script>
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
+        <script src="{% static "js/jquery.mCustomScrollbar.concat.min.js" %}"></script>
+        <script src="{% static "js/jquery.fancybox.js" %}"></script>
+        <script src="{% static "js/appear.js" %}"></script>
+        <script src="{% static "js/owl.js" %}"></script>
+        <script src="{% static "js/wow.js" %}"></script>
+        <script src="{% static "js/jquery-ui.js" %}"></script>
+        <script src="{% static "js/script.js" %}"></script>
+
+        {% if contact == 1 %}
+        <!--Google Map APi Key-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD39_Mb1wKUcuRD-0KPmQT6SQHhEMVX1O0"></script>
+        <script src="{% static "js/map-script.js" %}"></script>
+        <!--End Google Map APi-->
+        {% endif %}
+    </body>
+
+</html>

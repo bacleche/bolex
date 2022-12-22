@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Innovation</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">accueil</a></li>
+                <li>Innovation</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+               	<!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                	<aside class="sidebar">
+						<div class="sidebar-inner">
+							
+							<!-- Business Widget -->
+							<div class="sidebar-widget business-widget">
+								<div class="widget-content" style="background-image:url(images/resource/business.jpg);">
+									<div class="title">Get Your</div>
+									<h3>What Industries <span>Services For You?</span></h3>
+									<div class="text">Have and idea a dream? We Can Make it happen it.</div>
+									<div class="clearfix">
+										<div class="pull-left">
+											<a href="#" class="theme-btn btn-style-four">Contact Us</a>
+										</div>
+										<div class="pull-right">
+											<div class="number">+92 357 5674</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</aside>
+				</div>
+				
+				<!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                	<div class="service-single">
+						<div class="inner-box">
+
+							<!-- Two Column -->
+							<div class="two-column">
+								<div class="row clearfix">
+									<!-- Blocks Column -->
+									<div class="blocks-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="row clearfix">
+												<div class="col-md-12 col-lg-12 col-sm-6 col-xs-12">
+													<p>Manufacturing industry became a key sector of production and labour in European and North American countries during the Industrial Revolution, upsetting previous mercantile and feudal economies.</p>
+													<p>General repair & industrial and machinery. Our team up-to-date, sustainable custom manufacturing solutions. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Image Column -->
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="image">
+												<img src="{% static "images/resource/service-8.jpg" %}" alt="" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Two Column -->
+
+							<div class="lower-content">
+								<h2>Manufacturing</h2>
+								<div class="text">
+									<p>Buliten is one of leading company in manufacturing & petro chemical products. We makes long-term investments goal in global companies in different sectors, mainly in Europe and other countries. We provide cost-effective industrial solutions. Few can match for our promise to safety and commitment to your product development. <span class="theme_color">We offer the cleanest line of services</span> with latest technology, equipment.</p>
+									<p>Tectxon has completed hundreds of industrial projects in all industrial sectors. With a long list of products and never ending customer support we are able to guarantee a very high level of satisfaction for our clients.</p>
+								</div>
+							</div>
+
+							<div class="image">
+								<img src="{% static "images/resource/service-7.jpg" %}" alt="" />
+							</div>
+							<div class="lower-content">
+								<h2>Manufacturing</h2>
+								<div class="text">
+									<p>Buliten is one of leading company in manufacturing & petro chemical products. We makes long-term investments goal in global companies in different sectors, mainly in Europe and other countries. We provide cost-effective industrial solutions. Few can match for our promise to safety and commitment to your product development. <span class="theme_color">We offer the cleanest line of services</span> with latest technology, equipment.</p>
+									<p>Tectxon has completed hundreds of industrial projects in all industrial sectors. With a long list of products and never ending customer support we are able to guarantee a very high level of satisfaction for our clients.</p>
+
+									<h3>Why choose this service</h3>
+									<p>Manufacturing industry became a key sector of production and labour in European and North American countries during the Industrial Revolution, upsetting previous mercantile and feudal economies.</p>
+									<p>General repair & industrial and machinery. Our team up-to-date, sustainable custom manufacturing solutions. </p>
+
+									<h3>Our work benefits</h3>
+									<p>It all started with an aim, an aim to value the true potential of real China. The people that strive day in and day out to run one of the largest agrarian economies in the world are residents of villages and districts where financial stability is still at an arm’s length.But it was really passion and belief that saw us through. A single-minded passion to become the country’s greatest resource for financial information on the Internet. We believe strongly that we can and must do things differently.</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+									<h3>Frontiers of Research</h3>
+									<p>Since these skills are required for virtually everything that is made, mechanical engineering is perhaps the broadest and most diverse of engineering disciplines</p>
+								</div>
+
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">News Letter</div>
+							<h2>Join Our Community</h2>
+						</div>
+					</div>
+					<div class="text">Getting quality Industrial Care with Induzy is easier than ever. <br> Let us treat your loved ones like family!</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Email Address" required>
+								<button type="submit" class="theme-btn btn-style-four">Submit Now</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/newsletter.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

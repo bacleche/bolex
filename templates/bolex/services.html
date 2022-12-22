@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Nos Services</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">Accueil</a></li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Services Section -->
+	<section class="services-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<div class="title-inner">
+					<div class="title">Bolex-Group</div>
+					<h2>Leader dans l'interimaire , Voilà les services que nous proposons :</h2>
+				</div>
+			</div>
+			
+			<div class="row clearfix">
+			
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="oil-gas.html"><img src="{% static "images/resource/cable.jpg" %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="upper-layer"></div>
+							<div class="lower-layer"></div>
+							<h3><a href="{% url "expertises/installationelectrique" %}">Installation Electricité & Eclairage</a></h3>
+							<div class="text">L’éclairage d'un habitat,intérieur ou extérieur...</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="civil.html"><img src="{% static "images/resource/clim.jpg" %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="upper-layer"></div>
+							<div class="lower-layer"></div>
+							<h3><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenance Climatisation</a></h3>
+							<div class="text">Le professionnel doit lors de l’entretien vérifié...</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="chemical-research.html"><img src="{% static "images/resource/amenage3.jpg" %}" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="upper-layer"></div>
+							<div class="lower-layer"></div>
+							<h3><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></h3>
+							<div class="text">L’aménagement intérieur est la pratique consistant à décorer un intérieur.....</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="row clearfix">
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="{% static "images/resource/news1.jpg" %}" alt="" />
+						</div>
+						<h3><a href="{% url "expertises/gestionbatiment" %}">Gestion Batiments & Maintenance</a></h3>
+						<div class="text">La gestion des bâtiments comprend ...</div>
+					</div>
+				</div>
+				
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="{% static "images/resource/daj.jpg" %}" alt="" />
+						</div>
+						<h3><a href="{% url "nous-decouvrir/securite" %}">Securité</a></h3>
+						<div class="text">L’agent de sécurité a pour rôle essentiel de protéger les personnes et les biens ...</div>
+					</div>
+				</div>	
+				
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="{% static "images/resource/i.jpg" %}" alt="" />
+						</div>
+						<h3><a href="{% url "nous-decouvrir/nettoyagelocaux"  %}">Nettoyage Des Locaux</a></h3>
+						<div class="text">Le nettoyage des locaux consiste très  ... </div>
+					</div>
+				</div>	
+
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="{% static "images/resource/groupeautre.jpg" %}" alt="" />
+						</div>
+						<h3><a href="{% url "expertises/groupeelectrogene" %}" >Maintenance Groupe Electogène</a></h3>
+						<div class="text">Comme pour tout appareil électrique, un bon entretien... </div>
+					</div>
+				</div>	
+
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="{% static "images/resource/verdatre.jpg" %}" alt="" />
+						</div>
+						<h3><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></h3>
+						<div class="text">L’entretien des espaces verts et des extérieurs de l’entreprise  </div>
+					</div>
+				</div>	
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Services Section -->
+	
+	<!-- Services Section Two -->
+	
+	<!-- End Services Section Two -->
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">NewsLetter</div>
+							<h2>Integrez La Communauté</h2>
+						</div>
+					</div>
+					<div class="text">Recevez les dernières nouvelles et mises à jour !</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+								<button type="submit" class="theme-btn btn-style-four">Soumettre maintenant</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/wel.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

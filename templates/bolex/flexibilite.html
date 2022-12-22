@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Flexibilité</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">accueil</a></li>
+                <li>Flexibilité</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+               	<!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                	<aside class="sidebar">
+						<div class="sidebar-inner">
+							
+							<!-- Business Widget -->
+							<div class="sidebar-widget business-widget">
+								<div class="widget-content" style="background-image:url(images/resource/business.jpg);">
+									<div class="title">Obtenez Le  votre</div>
+									<h3><span>Quels services d’industries pour vous?</span></h3>
+									<div class="text">vous avez une idée de rêve? Nous pouvons y arriver.</div>
+									<div class="clearfix">
+										<div class="pull-left">
+											<a href="{% url "contact" %}" class="theme-btn btn-style-four">Contact-Nous</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</aside>
+				</div>
+				
+				<!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                	<div class="service-single">
+						<div class="inner-box">
+
+							<!-- Two Column -->
+							<div class="two-column">
+								<div class="row clearfix">
+									<!-- Blocks Column -->
+									<div class="blocks-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="row clearfix">
+												<div class="col-md-12 col-lg-12 col-sm-6 col-xs-12">
+													<h2>Pour Vous</h2>
+													<p>une
+														modulation du temps de travail
+														via un compteur d’heures pour s'adapter à votre activité
+														un large vivier de compétences disponibles.</p>
+													<p>un processus de recrutement rigoureux intégrant la mise en œuvre adaptée de tests métiers et questionnaires de personnalité
+														l’assurance de retrouver des salariés fidélisés, qui connaissent votre organisation et vos équipes. </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Image Column -->
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="image">
+												<img src="{% static "images/resource/flexible.jpg" %}" alt="" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Two Column -->
+
+							<div class="lower-content">
+								<h2>Flexibilité
+									Une solution « à la carte » </h2>
+								<div class="text">
+									<p>Nos équipes sont entièrement dédiées à vos problématiques.
+										Nous pouvons vous accompagner dans le montage et l’ingénierie de projet afin de répondre à tous vos besoins de compétences. (sourcing, recrutement, mise à disposition, constitution d’un vivier…)</p>
+								<p>Une adaptabilité garantie des collaborateurs
+									Un système socialement innovant, favorisant la performance.</p>
+								</div>
+							</div>
+
+							<div class="image">
+								<img src="{% static "images/resource/flexible.jpg" %}" alt="" />
+							</div>
+							<div class="lower-content">
+								
+								<div class="text">
+									<p>Nos salariés sont recrutés selon nos critères MAPP (mobilité, adaptabilité, polyvalence, poly compétence). Nous assurons un suivi de carrière professionnel (entretiens annuels, professionnels, système d’auto management). Nos salariés sont mobiles sur le territoire, et flexibles grâce à notre accord de modulation horaire.</p>
+									<h3>Nos oobjectifs de tous les jours</h3>
+									<p>Accompagner vos évolutions métier en toute flexibilité
+
+										Répondre de manière proactive aux nouvelles exigences de production
+										Nous recrutons, formons, assurons la montée en compétences de salariés qui constitueront votre vivier de demain.</p>
+									<p>Avec BOLEX GROUP Emploi, vous pouvez dès à présent disposer de compétences qui, à terme, seront intégrées directement à vos équipes.</p>
+								</div>
+
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">NewsLetter</div>
+							<h2>Integrez La Communauté</h2>
+						</div>
+					</div>
+					<div class="text">Recevez les dernières nouvelles et mises à jour !</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+								<button type="submit" class="theme-btn btn-style-four">Soumettre maintenant</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/wel.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

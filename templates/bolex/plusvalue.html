@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Notre plus-value</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="index-2.html">home</a></li>
+                <li>Plus-value</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+               	<!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                	<aside class="sidebar">
+						<div class="sidebar-inner">
+							
+							<!-- Business Widget -->
+							<div class="sidebar-widget business-widget">
+								<div class="widget-content" style="background-image:url(images/resource/business.jpg);">
+									<div class="title">Obtenez Le  votre</div>
+									<h3><span>Quels services d’industries pour vous?</span></h3>
+									<div class="text">vous avez une idée de rêve? Nous pouvons y arriver.</div>
+									<div class="clearfix">
+										<div class="pull-left">
+											<a href="{% url "contact" %}" class="theme-btn btn-style-four">Contact-Nous</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</aside>
+				</div>
+				
+				<!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                	<div class="service-single">
+						<div class="inner-box">
+							<div class="image">
+								<img src="{% static "images/resource/plus-value.jpg" %}" alt="" />
+							</div>
+							<div class="lower-content">
+								<h2>Quels sont les facteurs clefs d’une solution RH efficace ? </h2>
+								<div class="text">
+									<p>Les dirigeants et responsables RH sont amenés régulièrement à optimiser leur volet de main d’œuvre flexible. Un grand nombre de solutions existe, souvent complémentaires, afin de répondre de la manière la plus efficiente possible à leurs besoins. <span class="theme_color">Nous offrons la gamme de services la plus propre</span></p>
+									
+									<h3>Ce Que nous vous apportons particulièrement</h3>
+									
+									<p>BOLEX GROUP Emploi vous apporte une solution performante, durable, innovante, conciliant flexibilité et sécurité pour l’entreprise comme pour le salarié. </p>
+									<!-- Two Column -->
+									<div class="two-column">
+										<div class="row clearfix">
+											<!-- Blocks Column -->
+											<div class="blocks-column col-lg-6 col-md-6 col-sm-12">
+												<div class="inner-column">
+													<div class="row clearfix">
+														<div class="column col-md-6 col-sm-6 col-xs-12">
+															<ul class="list-style-two">
+																<li><span class="icon flaticon-microscope-1"></span>Excellent suivi</li>
+																<li><span class="icon flaticon-labor-man"></span>Meilleurs Experts</li>
+															</ul>
+														</div>
+														<div class="column col-md-6 col-sm-6 col-xs-12">
+															<ul class="list-style-two">
+																<li><span class="icon flaticon-clock-2"></span>Gerance de Temps</li>
+																<li><span class="icon flaticon-megaphone"></span>Image de Marque</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- Image Column -->
+											<div class="image-column col-lg-6 col-md-6 col-sm-12">
+												<div class="inner-column">
+													<div class="image">
+														<img src="{% static "images/resource/reflexion.jpg" %}" alt="" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- End Two Column -->
+
+
+									<h3>Une gestion RH assurée par BOLEX GROUP Emploi :</h3>
+									<p> gestion des contrats de travail,accompagnement de carrière (entretiens annuels, formations, etc.) ,suivi managérial. 
+										<p> Nous sommes en perpetuel perfectionnement afin de vous offrir un service de qualité .</p>
+									
+								</div>
+
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">NewsLetter</div>
+							<h2>Integrez La Communauté</h2>
+						</div>
+					</div>
+					<div class="text">Recevez les dernières nouvelles et mises à jour !</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+								<button type="submit" class="theme-btn btn-style-four">Soumettre maintenant</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/wel.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

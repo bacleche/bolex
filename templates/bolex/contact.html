@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Contactez-Nous</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">Accueil</a></li>
+                <li>Contactez-Nous</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Contact Page Section -->
+	<section class="contact-page-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Form Column -->
+				<div class="form-column col-lg-8 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<div class="title-inner">
+								<div class="title">Contactez-nous</div>
+								<h2>Nous Sommes actifs</h2>
+							</div>
+						</div>
+						
+						<!-- Contact Form -->
+						<div class="contact-form">
+							<form method="post" action="" id="contact-formu">
+								<div class="row clearfix">
+									
+									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="username" placeholder="Nom " required>
+									</div>
+									
+									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="email" name="email" placeholder="E-mail " required>
+									</div>
+									
+									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="subject" placeholder="Votre Sujet " required>
+									</div>
+									
+									<div class="col-lg-6 col-md-6 col-sm-12 form-group">
+										<input type="text" name="phone" placeholder="Numero de Telephone " required>
+									</div>
+									
+									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+										<textarea name="message" placeholder="Votre Message "></textarea>
+									</div>
+								
+									<div class="col-lg-12 col-md-12 col-sm-12 form-group">
+										<button class="theme-btn btn-style-four" type="submit" name="submit-form">Envoyer Maintenant</button>
+									</div>
+									
+								</div>
+								
+							</form>
+								
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- Info Column -->
+				<div class="info-column col-lg-4 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+					
+						<div class="sec-title">
+							<div class="title-inner">
+								<div class="title">Contactez-Nous</div>
+								<h2>Nos Informations</h2>
+							</div>
+						</div>
+						
+						<div class="content-boxed">
+							<div class="text">Pour Toutes requetes , veuillez nous contacter !</div>
+							<ul>
+								<li><span class="icon fa fa-phone"></span>(+242) 05 386 39 09 / 06 401 47 43</li>
+								<li><span class="icon fa fa-envelope"></span>info@bolex-group.com</li>
+								<li><span class="icon fa fa-map-marker"></span>Immeuble Yoka-Bernard(2e étage) Brazzaville (Rep. Congo)</li>
+								<li><span class="icon fa fa-clock-o"></span>Nos Horaires : Lun - Sam   9:00 am  à  5pm</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Faq Section -->
+	
+	<!-- Contact Map Section -->
+    <section class="contact-map-section">
+        <div class="auto-container">
+            <div class="map-outer">
+                <div class="map-canvas"
+                    data-zoom="12"
+                    data-lat="-37.817085"
+                    data-lng="144.955631"
+                    data-type="roadmap"
+                    data-hue="#ffc400"
+                    data-title="Envato"
+                    data-icon-path="{% static "images/icons/map-marker.png" %}"
+                    data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Map Section -->
+	
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

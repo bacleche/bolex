@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/amenage4.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Amenagement D'interieur</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">accueil</a></li>
+                <li>Amenagement D'interieur</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!-- Projects Single Section -->
+	<section class="projects-single-section">
+		<div class="auto-container">
+			<!-- Project Info Boxed -->
+			
+			
+			<h2>Le savoir Faire Chez Bolex-Group</h2>
+			<div class="bold-text">Nous vous reservons nos meilleurs experts en matiere d' Amenagement D'interieur ! </div>
+			
+			<!-- Carousel Box -->
+			<div class="carousel-box">
+				<div class="project-single-carousel owl-carousel owl-theme">
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/amenage3.jpg" %}" alt="" />
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/amenagement.jpg" %}" alt="" />
+						</div>
+					</div>
+					<div class="slide">
+						<div class="image">
+							<img src="{% static "images/gallery/amenage5.jpg" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<h3>Les defis de nos Clients</h3>
+			<p>Il est parfois tres difficile de trouver une bonne entreprise qui met à votre disposition le savoir faire absolu ! C'est pourquoi , Bolex-Group se charge d'etre cette entreprise de Choix Qui vous propose de bon agents en matiere d'Amenagement D'interieur' .</p>
+			<div class="row clearfix">
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					<h3>Notre Approche</h3>
+					<p>Notre Approche se fait en terme d'aide , C'est à dire vous decrocher nos meilleurs Agents (Experts) Afin de facilité vos vie Au quotidien et vous rendre plus important que voue ne l'etes déjà .</p>
+					<p>C'est dans cette meme Optique que nous organisons des formations d'elevations en Competences à certains de nos Agents afin de les rendre plus meilleurs , et etre qualifié d'experts.</p>
+					
+				</div>
+				<div class="column col-lg-6 col-md-12 col-sm-12">
+					
+					<!--Video Box-->
+					<div class="video-box">
+						<div class="image">
+							<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button"><i class="ripple"></i></span></a>
+							<img src="{% static "images/resource/amenage3.jpg" %}" alt="">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- Two Column -->
+			<div class="two-column">
+				<div class="row clearfix">
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+						<h3>Des Résultats ?</h3>
+						<p>Nous nous assurant des meilleurs resultat possible afin que notre travail soit toujours à la hauteur de votre satisfaction</p>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Projects Page Section -->
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">NewsLetter</div>
+							<h2>Integrez La Communauté</h2>
+						</div>
+					</div>
+					<div class="text">Recevez les dernières nouvelles et mises à jour !</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+								<button type="submit" class="theme-btn btn-style-four">Soumettre maintenant</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/wel.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}

@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static "images/background/9.jpg" %})">
+    	<div class="auto-container">
+        	<h2>Expertise</h2>
+            <ul class="page-breadcrumb">
+            	<li><a href="{% url "home" %}">accueil</a></li>
+                <li>Expertise</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+	
+	<!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+               	<!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                	<aside class="sidebar">
+						<div class="sidebar-inner">
+							
+							<!-- Business Widget -->
+							<div class="sidebar-widget business-widget">
+								<div class="widget-content" style="background-image:url(images/resource/business.jpg);">
+									<div class="title">Obtenez Le  votre</div>
+									<h3><span>Quels services d’industries pour vous?</span></h3>
+									<div class="text">vous avez une idée de rêve? Nous pouvons y arriver.</div>
+									<div class="clearfix">
+										<div class="pull-left">
+											<a href="{% url "contact" %}" class="theme-btn btn-style-four">Contact-Nous</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</aside>
+				</div>
+				
+				<!--Content Side-->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                	<div class="service-single">
+						<div class="inner-box">
+
+							<!-- Two Column -->
+							<div class="two-column">
+								<div class="row clearfix">
+									<!-- Blocks Column -->
+									<div class="blocks-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="row clearfix">
+												<h2>Notre expertise </h2>
+												<div class="col-md-12 col-lg-12 col-sm-6 col-xs-12">
+													<p> Votre partenaire emploi, sourcing, recrutement.
+														De vos recrutements à la gestion du personnel mis à disposition. </p>
+														<p>
+															Grâce à BOLEX GROUP Emploi, partagez vos ressources RH entre entreprises d’un même territoire. Nos salariés mis à disposition bénéficient d’un suivi de carrière professionnel. Ils sont mobiles, adaptables. Grâce à notre accord de modulation, gérez au plus près vos variations d’activité.
+														</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Image Column -->
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="inner-column">
+											<div class="image">
+												<img src="{% static "images/resource/expert1.jpg" %}" alt="" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Two Column -->
+
+							<div class="lower-content">
+								<h2>A Qui est-elle Concernée ?</h2>
+								<div class="text">
+									<p>Notre expertise concerne à la fois le sourcing, le recrutement, l’accompagnement à la mise à disposition…</p>
+									<p>Gain financier indirect important du temps partagé : fidélisation, polyvalence, professionnalisme, sécurité…</p>
+								</div>
+							</div>
+
+							<div class="image">
+								<img src="{% static "images/resource/expert2.jpg" %}" alt="" />
+							</div>
+								<div class="lower-content">
+								
+								<div class="text">
+								<p>Votre partenaire formation, gestion des compétences
+									Montée en compétences de salariés,Formation pour pallier aux compétences critiques
+									Nos salariés bénéficient du plan de formation pour développer leurs compétences.
+									Montage d’ingénierie de formation en amont de recrutement (contrat d’alternance, POEI, POEC, AFPR…)</p>
+									<h3>Possibilité d'Elevation en Compétences</h3>
+									<p>
+										Actions de formation courte en amont de la mise à disposition
+										Action de formation à la carte, correspondant à vos attentes terrain.
+										Modules de formation élaborés selon les spécificités techniques de votre site de production.Programme de formation entre 150 et 400 heures avec validation d’un Titre Professionnel.
+										Nous gérons et prenons à notre charge l’intégralité de l’ingénierie financière et pédagogique.
+									</p>
+									<h3>La montée en Competence ! Activité de Formation afin de vous aider  à etre plus performant . </h3>
+									<p>Possibilité d'Elevation de Competences dans les domaines / métiers suivants :</p>
+									<p>Agent de sécurité</p> 
+									<p>Réceptionniste</p> 
+									<p>Hôtesse d'accueil</p> 
+									<p>Entretien groupe électrogène</p> 
+									<p>Nettoyage des locaux	</p>
+								</div>
+
+							</div>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- Newsletter Section Two -->
+	<section class="newsletter-section-two" style="background-image:url(images/background/6.jpg)">
+		<div class="auto-container">
+			<div class="row clearfix">
+				<!-- Title Column -->
+				<div class="title-column col-lg-7 col-md-12 col-sm-12">
+					<!-- Sec Title -->
+					<div class="sec-title light">
+						<div class="title-inner">
+							<div class="title">NewsLetter</div>
+							<h2>Integrez La Communauté</h2>
+						</div>
+					</div>
+					<div class="text">Recevez les dernières nouvelles et mises à jour !</div>
+					
+					<!-- Newsletter Form -->
+					<div class="newsletter-form">
+						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+							<div class="form-group clearfix">
+								<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+								<button type="submit" class="theme-btn btn-style-four">Soumettre maintenant</button>
+							</div>
+						</form>
+					</div>
+					
+				</div>
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{% static "images/resource/wel.png" %}" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>			
+	</section>
+	
+
+	{% include "bolex/partials/sponsors.html" %}
+
+	{% endblock content %}
+		<!--End Newsleter Section-->
+	
+
+
+
+
+

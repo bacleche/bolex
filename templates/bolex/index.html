@@ -1,0 +1,923 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block content %}
+
+		<!--Main Slider-->
+		<section class="main-slider">
+
+			<div class="main-slider-carousel owl-carousel owl-theme">
+
+				<div class="slide style-two" style="background-image:url({% static "images/main-slider/team2.jpg" %})">
+					<div class="auto-container">
+						<div class="content clearfix">
+							<div class="title" style="font-size:40px;">Bienvenue Chez  Bolex-Group</div>
+							<h2>Leader Dans L'interimaire</h2>
+							<!-- <div class="text">Nous sommes la meilleure entreprise garantie pour vous servir. Nous nous <br> engageons à vous aider à tout moment.</div> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="slide style-two" style="background-image:url({% static "images/main-slider/elec2.jpg" %})">
+					<div class="auto-container">
+						<div class="content clearfix">
+							<div class="title">Installation Electricité Et Eclairage</div>
+							<h2>Nos Meilleurs Services à votre Disposition</h2>
+							<div class="text">Nous sommes la meilleure entreprise garantie pour vous servir. Nous nous <br> engageons à vous aider à tout moment.</div>
+							<div class="link-box">
+								<a href="{% url "about" %}" class="theme-btn btn-style-one">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide style-two" style="background-image:url({% static "images/main-slider/climatisation.jpg" %})">
+					<div class="auto-container">
+						<div class="content clearfix">
+							<div class="title">Maintenance Climatisation</div>
+							<h2>Notre equipe est partout avec vous !</h2>
+							<div class="text">Pour tirer parti de Bolex-Group,<br>  Faites de nous votre entreprise de choix !</div>
+							<div class="link-box">
+								<a href="{% url "services" %}" class="theme-btn btn-style-one">Decouvrez Nos services</a> <a href="{% url "contact" %}" class="theme-btn btn-style-three">Contactez-Nous</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slide style-two" style="background-image:url({% static "images/main-slider/locaux2.jpg" %})">
+					<div class="auto-container">
+						<div class="content clearfix">
+							<div class="title">Amanagement de l'Interieur </div>
+							<h2>Toujours présent pour vous rendre spécial</h2>
+							<div class="text">Faites nous confiance , <br> Nous nous chargeons de vous rendre spécial</div>
+							<div class="link-box">
+								<a href="{% url "about" %}" class="theme-btn btn-style-one">Lire Plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="auto-container">
+				<!-- Social Box -->
+				<div class="social-box">
+					<a href="#"><span class="fa fa-facebook"></span></a>
+					<a href="#"><span class="fa fa-twitter"></span></a>
+					<a href="#"><span class="fa fa-skype"></span></a>
+					<a href="#"><span class="fa fa-google-plus"></span></a>
+				</div>
+			</div>
+			<!--Scroll Dwwn Btn-->
+			<div class="mouse-btn-down scroll-to-target" data-target=".services-section-two"></div>
+		</section>
+		<!--End Main Slider-->
+
+		<!-- Services Section Two -->
+		<section class="services-section-two">
+			<div class="auto-container">
+				<div class="row clearfix">
+
+					<!-- Title Column -->
+					<div class="title-column col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Sec Title -->
+							<div class="sec-title">
+								<div class="title-inner">
+									<div class="title">Bienvenue chez</div>
+									<h2>Bolex-Group</h2>
+								</div>
+							</div>
+							<div class="text">Nous mettons le savoir faire de nos experts  à votre disposition afin d'obtenir une satisfaction de votre part. En sus une forte Confiance </div>
+							<!-- <a class="read-more" href="services.html">View All <span class="arrow fa fa-angle-double-right"></span></a> -->
+						</div>
+					</div>
+
+					<!-- Services Block Three -->
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-flask"></div> -->
+								<h6><a href="{% url "expertises/installationelectrique" %}">Installation Electricité et Eclairage</a></h6>
+							</div>
+							<div class="text">L’éclairage d'un habitat,intérieur ou extérieur, marche grâce au réseau électrique.  </div>
+							<a class="read-more" href="{% url "expertises/installationelectrique" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<!-- Services Block Three -->
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-bolt"></div> -->
+								<h6><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenace Climatisation </a></h6>
+							</div>
+							<div class="text">Le professionnel doit lors de l’entretien vérifié l'unité intérieure et  extérieure de votre climatiseur</div>
+							<a class="read-more" href="{% url "expertises/maintenanceclimatisation" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<!-- Services Block Three -->
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-fire-extinguisher"></div> -->
+								<h6><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></h6>
+							</div>
+							<div class="text">L’aménagement intérieur est la pratique consistant à décorer un intérieur pour créer un environnement  plus esthétique.</div>
+							<a class="read-more" href="{% url "expertises/amenagementinterieur" %}">Lire plus<span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<!-- Services Block Three -->
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-pagelines"></div> -->
+								<h6><a href="{% url "expertises/gestionbatiment" %}">Gestion Des Batiments et Maintenance</a></h6>
+							</div>
+							<div class="text"> La gestion des bâtiments comprend l'entretien, la maintenance, l'exploitation... </div>
+							<a class="read-more" href="{% url "expertises/gestionbatiment" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<!-- Services Block Three -->
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-paint-brush"></div> -->
+								<h6><a href="{% url "nous-decouvrir/securite" %}">Securité</a></h6>
+							</div>
+							<div class="text">L’agent de sécurité a pour rôle essentiel de protéger les personnes et les biens.Cette tâche recouvre ... </div>
+							<a class="read-more" href="{% url "nous-decouvrir/securite" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-paint-brush"></div> -->
+								<h6><a href="{% url "nous-decouvrir/nettoyagelocaux" %}">Nettoyage Des Locaux</a></h6>
+							</div>
+							<div class="text"> Le nettoyage des locaux consiste très souvent aux opérations suivantes : Le balayage de tous les bureaux de l’entreprise...</div>
+							<a class="read-more" href="{% url "nous-decouvrir/nettoyagelocaux" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-paint-brush"></div> -->
+								<h6><a href="{% url "expertises/groupeelectrogene" %}">Maintenance Groupe Electogène</a></h6>
+							</div>
+							<div class="text">Comme pour tout appareil électrique, un bon entretien et une bonne maintenance assurera une meilleure vie à votre groupe électrogène.</div>
+							<a class="read-more" href="{% url "expertises/groupeelectrogene" %}">Lire plus <span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+					<div class="services-block-three col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-box">
+							<div class="upper-box">
+								<!-- <div class="icon fa fa-paint-brush"></div> -->
+								<h6><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></h6>
+							</div>
+							<div class="text">L’entretien des espaces verts et des extérieurs de l’entreprise requiert différentes prestations pour préserver ce cadre de travail bucolique.</div>
+							<a class="read-more" href="{% url "expertises/espacevert" %}">Lire plus<span class="arrow fa fa-angle-double-right"></span></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section Two -->
+
+		<!-- Choice Section -->
+		<section class="choice-section">
+			<div class="auto-container">
+				<div class="row clearfix">
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="image">
+								<img src="{% static "images/resource/choice3.jpg" %}" alt="bolex-group" />
+							</div>
+						</div>
+					</div>
+
+					<!-- Content Column -->
+					<div class="content-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<!-- Sec Title -->
+							<div class="sec-title">
+								<div class="title-inner">
+									<div class="title">Pourquoi la sélection au mérite est-elle meilleure</div>
+									<h2>Pourquoi nous choisir ?</h2>
+								</div>
+							</div>
+							<div class="text">
+								<p>Nous nous chargeons de votre confort et de rendre des services agréables pour vous aider à devenir  de plus en plus spécial</p>
+								<p>Géneralement nos solutions sont immédiates et excelentes, nos meilleurs experts sont à votre disposition </p>
+							</div>
+							<div class="row clearfix">
+								<div class="column col-md-6 col-sm-6 col-xs-12">
+									<ul class="list-style-two">
+										<li><span class="icon flaticon-microscope-1"></span>Excellent suivi</li>
+										<li><span class="icon flaticon-labor-man"></span>Meilleurs Experts</li>
+									</ul>
+								</div>
+								<div class="column col-md-6 col-sm-6 col-xs-12">
+									<ul class="list-style-two">
+										<li><span class="icon flaticon-clock-2"></span>Gerance de Temps</li>
+										<li><span class="icon flaticon-megaphone"></span>Image de Marque</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Choice Section -->
+
+		<!-- Services Section Three -->
+		<section class="services-section-three" style="background-image:url(images/background/pattern-2.png)">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title">
+					<div class="title-inner">
+						<div class="title">Le Savoir Faire</div>
+						<h2>Notre Processus de Travail</h2>
+					</div>
+				</div>
+				<div class="row clearfix">
+
+					<!-- Services Block Four -->
+					<div class="services-block-four col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="icon flaticon-loupe-1"></span>
+							</div>
+							<h5><span>01</span> - Decouvrir</h5>
+							<div class="text">People with ideas and experience to develop a vision for the future</div>
+						</div>
+					</div>
+
+					<!-- Services Block Four -->
+					<div class="services-block-four col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="icon flaticon-settings-3"></span>
+							</div>
+							<h5><span>02</span> - Analyser</h5>
+							<div class="text">The right tools at the right time enhances the shard economy</div>
+						</div>
+					</div>
+
+					<!-- Services Block Four -->
+					<div class="services-block-four col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="icon flaticon-mail"></span>
+							</div>
+							<h5><span>03</span> - Mettre en liaison</h5>
+							<div class="text">Intgrating clients with partners is the focus of everyday business</div>
+						</div>
+					</div>
+
+					<!-- Services Block Four -->
+					<div class="services-block-four col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
+							<div class="icon-box">
+								<span class="icon flaticon-support-1"></span>
+							</div>
+							<h5><span>04</span> - Lancer(Executer)</h5>
+							<div class="text">Bringing highly-anticipated programs to the marketplace</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Services Section Two -->
+
+		<!--Project Section-->
+		<section class="project-section-two" style="background-image:url(images/background/3.jpg)">
+
+			<!--Porfolio Tabs-->
+			<div class="project-tab">
+				<div class="auto-container">
+					<!--Sec Title-->
+					<div class="sec-title light">
+						<div class="clearfix">
+							<div class="pull-left">
+								<!-- Sec Title -->
+								<div class="title-inner">
+									<div class="title">Nos Competences</div>
+									<h2>Le Savoir Faire</h2>
+								</div>
+							</div>
+							<div class="tab-btns-box pull-right">
+								<!--Tabs Header-->
+								<!-- <div class="tabs-header">
+									<ul class="product-tab-btns clearfix">
+										<li class="p-tab-btn active-btn" data-tab="#p-tab-1">All Cases</li>
+										<li class="p-tab-btn" data-tab="#p-tab-2">Installation Electricité et Eclairage</li>
+										<li class="p-tab-btn" data-tab="#p-tab-3">Maintenace Climatisation </li>
+										<li class="p-tab-btn" data-tab="#p-tab-4">Amenagement D'interieur</li>
+										<li class="p-tab-btn" data-tab="#p-tab-5">Gestion Des Batiments et Maintenance</li>
+										<li class="p-tab-btn" data-tab="#p-tab-5">Agriculture</li>
+									</ul>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--Tabs Content-->
+				<div class="p-tabs-content">
+
+					<!--Portfolio Tab / Active Tab-->
+					<div class="p-tab active-tab" id="p-tab-1">
+						<div class="project-carousel owl-theme owl-carousel">
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/elec1.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Installation Electricité...</h5>
+											<!-- <div class="category">Latest Agriculture Process</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/installationelectrique" %}">Installation Electricité...</a></h3>
+													<div class="text"> le fonctionnement de l'eclairage d'un habitat est grace au réseau électrique</div>
+													<a href="{% url "expertises/installationelectrique" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/climatiso1.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Maintenance Climatisation</h5>
+											<!-- <div class="category">Power & Enerty</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/maintenanceclimatisation" %}">Maintenace Climatisation</a></h3>
+													<div class="text">L'expert se doit de verifier l'intérieure et extérieure de votre climatiseur</div>
+													<a href="{% url "expertises/maintenanceclimatisation" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/amenagement.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Amenagement D'interieur</h5>
+											<!-- <div class="category">Flammable Chemicals</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/amenagementinterieur" %}">Amenagement D'interieur</a></h3>
+													<div class="text">En matière d’aménagement , chaque pièce doit répondre à vos besoins</div>
+													<a href="{% url "expertises/amenagementinterieur" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/batiment.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Gestion Des Batiments...</h5>
+											<!-- <div class="category">Welding Mechanice</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/gestionbatiment" %}">Gestion Des Batiments...</a></h3>
+													<div class="text">La gestion des bâtiments comprend l'entretien, la maintenance...</div>
+													<a href="{% url "expertises/gestionbatiment" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/secure1.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Securité</h5>
+											<!-- <div class="category">Latest Agriculture Process</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "nous-decouvrir/securite" %}">Securité</a></h3>
+													<div class="text">L'agent de sécurité est chargé de la protection des biens et des personnes</div>
+													<a href="{% url "nous-decouvrir/securite" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/loc.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Nettoyage Des Locaux</h5>
+											<!-- <div class="category">Latest Agriculture Process</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "nous-decouvrir/nettoyagelocaux" %}">Nettoyage Des Locaux</a></h3>
+													<div class="text">il beau d'etre dans un environnement sain, nos experts sont présents</div>
+													<a href="{% url "nous-decouvrir/nettoyagelocaux" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/groupeautre.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Maintien Groupe Electro...</h5>
+											<!-- <div class="category">Power & Enerty</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/groupeelectrogene" %}">Maintien Groupe Electro...</a></h3>
+													<div class="text">tout appareil électrique necessite  une bonne maintenance</div>
+													<a href="{% url "expertises/groupeelectrogene" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Project Block Two -->
+							<div class="project-block-two">
+								<div class="inner-box">
+									<div class="image">
+										<img src="{% static "images/gallery/espace_vert3.jpg" %}" alt="" />
+										<!-- Overlay Box -->
+										<div class="overlay-box">
+											<h5>Espaces Verts</h5>
+											<!-- <div class="category">Flammable Chemicals</div> -->
+										</div>
+										<!-- Overlay Box Two -->
+										<div class="overlay-box-two">
+											<div class="overlay-inner">
+												<div class="content">
+													<div class="title">Processus</div>
+													<h3><a href="{% url "expertises/espacevert" %}">Espaces Verts</a></h3>
+													<div class="text">Le savoir faire de nos experts pour l'entretien de vos espaces</div>
+													<a href="{% url "expertises/espacevert" %}" class="read-more">Lire plus</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Faq Section -->
+		<section class="faq-section">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title">
+					<div class="title-inner">
+						<div class="title">Toujours Present Pour Vous !</div>
+						<h2>Notre Plaisir</h2>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+
+					<!-- Accordian Column -->
+					<div class="accordian-column col-lg-7 col-md-12 col-sm-12">
+						<div class="inner-column">
+
+							<!--Accordian Box-->
+							<h4>Bolex-Group , Leader Dans L'Interimaire.</h4>
+							<br>
+							<h4>
+								Votre Meileur Partenaire au Quotidien !
+								<br>
+								Un acompagnement sûr et rassurant pour un rendu meilleur 
+								<br>
+								Avec Des équipes dynamiques , Très ponctuelles pour satisfaire vos attentes .
+
+							</h4>
+
+						</div>
+						<br>
+						<div class="inner-column">
+
+							<!--Accordian Box-->
+							
+							<h4>
+								Demander un devis pour un accompagnement, signifie pour nous une confiance de votre part !
+
+							</h4>
+							<br><br><br>
+							<div class="link-box">
+								<a href="{% url "contact" %}" class="theme-btn btn-style-three">Solliciter un Partenariat</a> <a href="{% url "contact" %}" class="theme-btn btn-style-three">Demader un Devis</a>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Image Column -->
+					<div class="image-column col-lg-5 col-md-12 col-sm-12">
+						<div class="inner-column wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="image">
+								<img src="{% static "images/resource/agentNoir.jpg" %}" alt= ""/>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Faq Section -->
+
+		<!-- Testimonial Section -->
+		<section class="testimonial-section-two" style="background-image:url(images/background/4.jpg)">
+			<div class="auto-container">
+				<!-- Sec Title -->
+				<div class="sec-title">
+					<div class="title-inner">
+						<div class="title">Notre Organisation </div>
+						<h2>Experts De la Communauté</h2>
+					</div>
+				</div>
+
+				<div class="three-item-carousel owl-carousel owl-theme">
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-2.jpg" %}" alt="" />
+									</div>
+									<h6>Farnandoz Biki</h6>
+									<div class="designation">Ceo</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-3.jpg" %}" alt="" />
+									</div>
+									<h6>Monica Mora</h6>
+									<div class="designation">Marketing Director</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-4.jpg" %}" alt="" />
+									</div>
+									<h6>Monal Maly</h6>
+									<div class="designation">Seo Officer</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-2.jpg" %}" alt="" />
+									</div>
+									<h6>Farnandoz Biki</h6>
+									<div class="designation">Ceo</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-3.jpg" %}" alt="" />
+									</div>
+									<h6>Monica Mora</h6>
+									<div class="designation">Marketing Director</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial Block Two -->
+					<div class="testimonial-block-two">
+						<div class="inner-box">
+							<div class="quote-icon flaticon-quote-1"></div>
+							<div class="text">Post...</div>
+							<div class="author-info">
+								<div class="info-inner">
+									<div class="author-image">
+										<img src="{% static "images/resource/author-4.jpg" %}" alt="" />
+									</div>
+									<h6>Monal Maly</h6>
+									<div class="designation">Seo Officer</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Testimonial Section -->
+
+		<!-- News Section -->
+		<!-- <section class="news-section">
+			<div class="auto-container">
+				
+				<div class="sec-title">
+					<div class="title-inner">
+						<div class="title">Latest News and Artical</div>
+						<h2>Our Company Blogs</h2>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+
+					
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+
+						
+						<div class="news-block">
+							<div class="inner-box">
+								<div class="row clearfix">
+									
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<div class="image">
+												<img src="{% static "images/resource/news-1.jpg" %}" alt="" />
+												<div class="image-layer" style="background-image:url(images/resource/news-1.jpg)"><a class="overlay-link" href="blog-single.html"></a></div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="content-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<ul class="post-info">
+												<li>24th August 2019</li>
+												<li>Machnical Engineering</li>
+											</ul>
+											<h3><a href="blog-single.html">Collaboration through advanced touch base UI</a></h3>
+											<div class="text">Baseline the procedure and samepage your department. Golden goose. Social currency. Those options are already baked in with this model run it up the flagpole.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="news-block">
+							<div class="inner-box">
+								<div class="row clearfix">
+									
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<div class="image">
+												<img src="{% static "images/resource/news-2.jpg" %}" alt="" />
+												<div class="image-layer" style="background-image:url(images/resource/news-2.jpg)"><a class="overlay-link" href="blog-single.html"></a></div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="content-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<ul class="post-info">
+												<li>24th August 2019</li>
+												<li>Machnical Engineering</li>
+											</ul>
+											<h3><a href="blog-single.html">Lean into that problem proceduralize.</a></h3>
+											<div class="text">Baseline the procedure and samepage your department. Golden goose. Social currency. Those options are already baked in with this model run it up the flagpole.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					
+					<div class="column col-lg-6 col-md-12 col-sm-12">
+
+					
+						<div class="news-block">
+							<div class="inner-box">
+								<div class="row clearfix">
+									
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<div class="image">
+												<img src="{% static "images/resource/news-2.jpg" %}" alt="" />
+												<div class="image-layer" style="background-image:url(images/resource/news-2.jpg)"><a class="overlay-link" href="blog-single.html"></a></div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="content-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<ul class="post-info">
+												<li>24th August 2019</li>
+												<li>Machnical Engineering</li>
+											</ul>
+											<h3><a href="blog-single.html">Lean into that problem proceduralize.</a></h3>
+											<div class="text">Baseline the procedure and samepage your department. Golden goose. Social currency. Those options are already baked in with this model run it up the flagpole.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="news-block">
+							<div class="inner-box">
+								<div class="row clearfix">
+									
+									<div class="image-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<div class="image">
+												<img src="{% static "images/resource/news-1.jpg" %}" alt="" />
+												<div class="image-layer" style="background-image:url(images/resource/news-1.jpg)"><a class="overlay-link" href="blog-single.html"></a></div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="content-column col-lg-6 col-md-6 col-sm-12">
+										<div class="column-inner">
+											<ul class="post-info">
+												<li>24th August 2019</li>
+												<li>Machnical Engineering</li>
+											</ul>
+											<h3><a href="blog-single.html">Collaboration through advanced touch base UI</a></h3>
+											<div class="text">Baseline the procedure and samepage your department. Golden goose. Social currency. Those options are already baked in with this model run it up the flagpole.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section> -->
+		<!-- End News Section -->
+
+		<!--Newsleter Section-->
+		<section class="newsletter-section" style="background-image:url(images/background/13.jpg)">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row clearfix">
+
+						<!--Title Column-->
+						<div class="title-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="icon-box">
+									<span class="icon flaticon-mail"></span>
+								</div>
+								<h4>Inscription à la Newsletter</h4>
+								<div class="title">Recevez les dernières nouvelles et mises à jour</div>
+							</div>
+						</div>
+
+						<!--Form Column-->
+						<div class="form-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+
+								<!--Subscribe Form-->
+								<div class="subscribe-form">
+									<form method="POST">
+										
+										<div class="form-group">
+											<input type="email" name="email" value="" placeholder="Adresse e-mail" required>
+											<button type="submit" class="theme-btn btn-style-three">Soumettre maintenant</button>
+										</div>
+									</form>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--End Newsleter Section-->
+	
+	{% endblock content %}
+
+
+
+
